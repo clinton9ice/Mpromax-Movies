@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with one click to start our special services and features.</title>
+    <link rel="stylesheet" href="./style/public.css">
+    <link rel="stylesheet" href="./style/auth.css">
+    <script src="https://kit.fontawesome.com/c9b31d92fc.js" crossorigin="anonymous"></script>
+    <script src="build/js/jquery-3.3.1.min.js"></script>
+</head>
+<body id="login-page" >
+
+<div class="container__fluid tr" datatype="login">
+
+<div class="login__modal tr">
+
+    <h2 class="header_txt">Login</h2>
+
+    <form method="post" name="login_info" action="#">
+
+        <div class="input_form">
+            <label for="name">Username</label>
+            <input type="text" placeholder="username or email" id="name" name="name_email">
+        </div>
+
+        <div class="input_form">
+            <span class="tr rd_p">
+                <label for="pass">Password</label>
+                <a class="fg_pwd">Forgotten Password ?</a>
+            </span>
+            <span class="tr" data-pass>
+            <input type="password" placeholder="Type here" id="pass" name="password">
+            <i class="fa fa-eye-slash"></i>
+            </span>
+        </div>
+
+        <div class="input_form">
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember" class="link">Remember Me</label>
+        </div>
+
+        <button type="button" class="button">Proceed</button>
+    </form>
+
+    <span class="rg_u">
+            Haven't registered yet? <a href="register.html">Signup </a>
+        </span>
+</div>
+
+</div>
+
+<script src="build/js/public.js"></script>
+</html>
