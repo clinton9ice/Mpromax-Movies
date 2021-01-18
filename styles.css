@@ -1,0 +1,156 @@
+@font-face {
+	font-family: helvetica;
+	font-weight: 500;
+	src: url("./Mpromax-Movies/build/font/Helvetica-Neue-Regular.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "helvetica", sans-serif;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  overflow: hidden;
+  line-height: 1.5;
+  
+}
+
+.landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Mpromax-Movies/build/image/legends\ of\ tommorow.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.logo h1 {
+  color: #f7652f;
+  letter-spacing: 2px;
+}
+.logo h1:hover {
+  color: #fff
+}
+.navlist ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+.navlist ul li{
+  margin-right: 30px;
+  padding-right: 10px;
+}
+
+.navlist ul > :last-child {
+  margin-right: 0;
+  padding-right: 10px;
+}
+.navlist a:hover {
+  color: #f7652f;
+}
+
+
+.landing-text {
+  /* margin: 0px auto; */
+  text-align: center;
+  max-width: 750px;
+  padding: 0 20px;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.landing-text h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.landing-text p {
+  margin-bottom: 40px;
+}
+
+.landing-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.rating a {
+  font-size: 1rem;
+  margin-right: 40px;
+}
+.rate {
+  
+  border: solid #f7652f 1px;
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+.rate:hover {
+  background-color: #f7652f;
+}
+.btn {
+  border: solid transparent 1px;
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+.btn-1 {
+  background-color: #666;
+}
+.btn-2 {
+  background-color: #f7652f;
+}
+
+.btn-1:hover {
+  background-color: #f7652f;
+}
+.btn-2:hover {
+  background-color: #666;
+}
+
+/* media queries */
+
+@media screen and (max-width: 750px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .landing-text h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 10px 20px
+  }
+}
