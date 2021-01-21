@@ -329,6 +329,15 @@ nav>.nav-list>.nav-link:hover [data-target="sub-menu"] {
 }
 
 /*---submenu---*/
+#ld__pg{
+	flex-direction: column;
+}
+#ld__pg nav{
+	background: transparent;
+	position: absolute;
+	top: 0;
+	backdrop-filter: none;
+}
 nav [data-target="sub-menu"] {
 	position: absolute;
 	right: 0;
